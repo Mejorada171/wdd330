@@ -32,7 +32,7 @@ header {
 }
 .logo {
   line-height: 60px;
-  width: 245px;
+  width: 145px;
   overflow: hidden;
   display: flex;
   font-size: 30px;
@@ -164,6 +164,11 @@ button {
 
 .product-detail img {
   width: 100%;
+}
+
+.tent {
+  width: 100px;
+  height: 100px;
 }
 
 /* Start cart list card styles */
