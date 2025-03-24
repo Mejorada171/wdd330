@@ -1,4 +1,4 @@
 import { ProductList } from "./ProductList.mjs";
 
 const productList = new ProductList();
-console.log(productList.getProducts());
+// console.log(productList.getProducts());

@@ -24,4 +24,5 @@ export default class ProductList {
       const list = await this.dataSource.getData();
       // next, render the list – ** future **
     }
+    
   }
