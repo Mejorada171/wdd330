@@ -16,3 +16,26 @@ async function addToCartHandler(e) {
 document
   .getElementById("addToCart")
   .addEventListener("click", addToCartHandler);
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const modal = document.getElementById("registrationModal");
+    const closeButton = document.querySelector(".close-button");
+    const registerButton = document.getElementById("registerNow");
+  
+    // Check if the user is visiting for the first time
+    if (!localStorage.getItem("visited")) {
+      modal.classList.remove("hidden");
+      localStorage.setItem("visited", "true");
+    }
+  
+    // Close modal on button click
+    closeButton.addEventListener("click", () => {
+      modal.classList.add("hidden");
+    });
+  
+    // Navigate to the registration page on click
+    registerButton.addEventListener("click", () => {
+    window.location.href = window.location.origin + '/registration';
+});
+    });
+  
